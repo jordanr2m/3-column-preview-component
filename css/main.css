@@ -1,0 +1,134 @@
+/**** GLOBAL STYLES --- MOBILE FIRST DESIGN ******/
+html,
+body {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    line-height: 1.7em;
+}
+
+.button-one,
+.button-two,
+.button-three {
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button-one {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-two {
+    color: hsl(184, 100%, 22%);
+}
+
+.button-three {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 100%);
+    transition: 0.7s;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/***** Wrapper & Layout Styles ******/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.column-one,
+.column-two,
+.column-three {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 35px;
+}
+
+.column-one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.column-two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.column-three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.text-wrapper {
+    margin: 10px;
+}
+
+/***** Frontend Mentor Attribution Styles *****/
+
+.attribution {
+    margin-top: 40px;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  /***** BREAKPOINTS - TABLET & DESKTOP DESIGN *****/
+  @media all and (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        max-width: 960px; 
+    }
+
+    .column-one,
+    .column-two,
+    .column-three {
+        padding: 45px;
+    }
+
+    .text-wrapper {
+        margin: 0;
+        padding-bottom: 60px;
+    }
+  }
